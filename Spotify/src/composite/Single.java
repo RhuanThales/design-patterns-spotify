@@ -8,10 +8,11 @@ package composite;
 public class Single implements Music {
     public String title;
     public float time;
-    public Single(String titulo, float tempo)
+    
+    public Single(String titulo, float time)
     {
         this.title = titulo;
-        this.time = tempo;
+        this.time = time;
     }
 
     @Override

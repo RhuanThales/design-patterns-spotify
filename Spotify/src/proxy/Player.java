@@ -1,6 +1,7 @@
 package proxy;
 
-import composite.Playlist;
+import composite.*;
+
 /**
  *
  * @author Caio Vicente Rodrigues

@@ -2,6 +2,7 @@ package composite;
 
 import java.util.ArrayList;
 import java.util.List;
+
 /**
  *
  * @author Caio Vicente Rodrigues
@@ -11,12 +12,12 @@ public class Playlist {
     List<Music> musics = new ArrayList<>();
 
     public void play(){
-    for(Music m : musics){
-        System.out.println(m.getTitle() + " - " + m.getTime());
-    }
+        musics.forEach((music) -> {
+            System.out.println(music.getTitle() + " - " + music.getTime());
+        });
     }
 
-    public void addMusica(Music m){
-        this.musics.add(m);
+    public void addMusica(Music music){
+        this.musics.add(music);
     }
 }
